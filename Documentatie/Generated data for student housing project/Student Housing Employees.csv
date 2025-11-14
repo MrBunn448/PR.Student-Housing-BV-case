@@ -1,0 +1,49 @@
+Employee ID,Name,Surname,Email,Monthly Salary (€),Job Title,Start Date,Location,Manager
+1,Alice,Smith,alice@studenthousing.com,3000,Maintenance Manager,2020-03-15,Amsterdam,John Doe
+2,John,Doe,john@studenthousing.com,2500,Property Manager,2019-12-01,Amsterdam,Michael Johnson
+3,Sarah,Johnson,sarah@studenthousing.com,2200,Accountant,2020-01-10,Amsterdam,Michael Johnson
+4,Michael,Johnson,michael@studenthousing.com,4000,General Manager,2019-10-01,Amsterdam,N/A
+5,Emma,Williams,emma@studenthousing.com,2800,Maintenance Supervisor,2020-04-05,Amsterdam,Alice Smith
+6,David,Brown,david@studenthousing.com,2600,Property Coordinator,2020-02-20,Amsterdam,John Doe
+7,Samantha,Jones,samantha@studenthousing.com,2300,Receptionist,2020-06-10,Amsterdam,Michael Johnson
+8,James,Miller,james@studenthousing.com,3200,Maintenance Technician,2020-05-15,Amsterdam,Alice Smith
+9,Olivia,Davis,olivia@studenthousing.com,2400,Administrative Assistant,2020-08-01,Amsterdam,Michael Johnson
+10,William,Wilson,william@studenthousing.com,2800,Maintenance Technician,2020-07-20,Amsterdam,Alice Smith
+11,Emily,Taylor,emily@studenthousing.com,2600,Property Coordinator,2020-09-10,Amsterdam,John Doe
+12,Mason,Anderson,mason@studenthousing.com,2200,Receptionist,2020-10-05,Amsterdam,Michael Johnson
+13,Ella,Thomas,ella@studenthousing.com,3000,Maintenance Supervisor,2020-11-15,Amsterdam,Alice Smith
+14,Daniel,Jackson,daniel@studenthousing.com,2500,Property Coordinator,2020-12-01,Amsterdam,John Doe
+15,Amelia,White,amelia@studenthousing.com,2300,Receptionist,2021-01-10,Amsterdam,Michael Johnson
+16,Alexander,Harris,alexander@studenthousing.com,3200,Maintenance Technician,2021-02-20,Amsterdam,Alice Smith
+17,Avery,Martin,avery@studenthousing.com,2400,Administrative Assistant,2021-03-10,Amsterdam,Michael Johnson
+18,Abigail,Thompson,abigail@studenthousing.com,2800,Maintenance Technician,2021-04-05,Amsterdam,Alice Smith
+19,Ethan,Garcia,ethan@studenthousing.com,2600,Property Coordinator,2021-05-15,Amsterdam,John Doe
+20,Harper,Morris,harper@studenthousing.com,2200,Receptionist,2021-06-01,Amsterdam,Michael Johnson
+21,Sofia,Hall,sofia@studenthousing.com,3000,Maintenance Supervisor,2021-07-20,Amsterdam,Alice Smith
+22,Elijah,Ward,elijah@studenthousing.com,2500,Property Coordinator,2021-08-10,Amsterdam,John Doe
+23,Scarlett,Lopez,scarlett@studenthousing.com,2300,Receptionist,2021-09-05,Amsterdam,Michael Johnson
+24,Liam,Scott,liam@studenthousing.com,3200,Maintenance Technician,2021-10-01,Amsterdam,Alice Smith
+25,Chloe,Green,chloe@studenthousing.com,2400,Administrative Assistant,2021-11-15,Amsterdam,Michael Johnson
+26,Mia,Adams,mia@studenthousing.com,2800,Maintenance Technician,2021-12-05,Amsterdam,Alice Smith
+27,Noah,Baker,noah@studenthousing.com,2600,Property Coordinator,2022-01-10,Amsterdam,John Doe
+28,Isabella,Nelson,isabella@studenthousing.com,2200,Receptionist,2022-02-20,Amsterdam,Michael Johnson
+29,Lucas,Hill,lucas@studenthousing.com,3000,Maintenance Supervisor,2022-03-15,Amsterdam,Alice Smith
+30,Riley,Rivera,riley@studenthousing.com,2500,Property Coordinator,2022-04-01,Amsterdam,John Doe
+31,Layla,Cooper,layla@studenthousing.com,2300,Receptionist,2022-05-10,Amsterdam,Michael Johnson
+32,Lincoln,Ward,lincoln@studenthousing.com,3200,Maintenance Technician,2022-06-05,Amsterdam,Alice Smith
+33,Zoey,Bailey,zoey@studenthousing.com,2400,Administrative Assistant,2022-07-20,Amsterdam,Michael Johnson
+34,Christopher,Watson,christopher@studenthousing.com,2800,Maintenance Technician,2022-08-01,Amsterdam,Alice Smith
+35,Anna,Cooper,anna@studenthousing.com,2600,Property Coordinator,2022-09-10,Amsterdam,John Doe
+36,Madison,Rivera,madison@studenthousing.com,2200,Receptionist,2022-10-05,Amsterdam,Michael Johnson
+37,Leo,Hill,leo@studenthousing.com,3000,Maintenance Supervisor,2022-11-15,Amsterdam,Alice Smith
+38,Evelyn,West,evelyn@studenthousing.com,2500,Property Coordinator,2022-12-01,Amsterdam,John Doe
+39,Hudson,Cook,hudson@studenthousing.com,2300,Receptionist,2023-01-10,Amsterdam,Michael Johnson
+40,Aubrey,Roberts,aubrey@studenthousing.com,3200,Maintenance Technician,2023-02-20,Amsterdam,Alice Smith
+41,Grace,Brooks,grace@studenthousing.com,2400,Administrative Assistant,2023-03-05,Amsterdam,Michael Johnson
+42,Nathan,Ross,nathan@studenthousing.com,2800,Maintenance Technician,2023-04-01,Amsterdam,Alice Smith
+43,Lillian,Evans,lillian@studenthousing.com,2600,Property Coordinator,2023-05-10,Amsterdam,John Doe
+44,Henry,Parker,henry@studenthousing.com,2200,Receptionist,2023-06-05,Amsterdam,Michael Johnson
+45,Ella,Gonzalez,ella.g@studenthousing.com,3000,Maintenance Supervisor,2023-07-15,Amsterdam,Alice Smith
+46,William,Moore,william.moore@studenthousing.com,4500,Senior Maintenance Manager,2020-06-15,Amsterdam,N/A
+47,Lily,King,lily.king@studenthousing.com,4200,Senior Property Manager,2019-08-01,Amsterdam,N/A
+48,Dylan,Wright,dylan.wright@studenthousing.com,3800,Senior Accountant,2020-09-10,Amsterdam,N/A

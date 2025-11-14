@@ -1,0 +1,21 @@
+ID,City,Address,Rooms Available,Square Meters,Rental Price per Room (€)
+1,Amsterdam,Keizersgracht 123,3,80,500
+2,Amsterdam,Prinsengracht 456,2,65,450
+3,Amsterdam,Herengracht 789,4,100,600
+4,Amsterdam,Singel 101,1,45,400
+5,Amsterdam,Damstraat 12,3,75,550
+6,Amsterdam,Leidseplein 34,2,60,480
+7,Amsterdam,Rembrandtplein 56,2,55,470
+8,Amsterdam,Jordaan 78,1,40,420
+9,Amsterdam,Vondelparklaan 90,3,70,520
+10,Amsterdam,Oudezijds Voorburgwal 112,2,50,460
+11,Rotterdam,Coolsingel 1,3,75,480
+12,Rotterdam,Blaak 10,2,60,450
+13,Rotterdam,Witte de Withstraat 22,2,55,430
+14,Rotterdam,Erasmusbrug 33,1,40,400
+15,Rotterdam,Kop van Zuid 44,2,65,470
+16,Groningen,Vismarkt 5,2,70,420
+17,Groningen,Folkingestraat 11,1,50,380
+18,Groningen,Grote Markt 20,3,80,500
+19,Groningen,Herestraat 30,2,60,450
+20,Groningen,Hoornsemeerweg 55,3,75,480

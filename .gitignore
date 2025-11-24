@@ -1,7 +1,7 @@
 Dependencies
 
 node_modules/              # Exclude all project dependencies
-
+node_modules
 Build Artifacts
 
 /client/dist               # Exclude frontend build files (Vite/React output)

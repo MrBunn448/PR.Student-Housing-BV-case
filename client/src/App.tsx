@@ -5,13 +5,22 @@ import { io } from 'socket.io-client';
 
 // MOCK CONNECTION
 const socket = io('http://localhost:3001');
-const CURRENT_USER = { id: 1, name: 'Gio' };
+type User = { id: number; name: string };
+const CURRENT_USER: User = { id: 1, name: 'Gio' };
+
+type Announcement = {
+  id: number;
+  titel: string;
+  datum: string; // ISO date string
+  beschrijving: string;
+  student_id?: number;
+};
 
 export default function App() {
-  const [view, setView] = useState('home');
-  const [announcements, setAnnouncements] = useState([]);
-  const [filterFuture, setFilterFuture] = useState(false);
-  const [readersMap, setReadersMap] = useState({});
+  const [view, setView] = useState<'home' | 'create'>('home');
+  const [announcements, setAnnouncements] = useState<Announcement[]>([]);
+  const [filterFuture, setFilterFuture] = useState<boolean>(false);
+  const [readersMap, setReadersMap] = useState<Record<number, string[]>>({});
 
   useEffect(() => {
     fetchAnnouncements();
@@ -23,18 +32,18 @@ export default function App() {
   const fetchAnnouncements = async () => {
     try {
         const url = `http://localhost:3001/api/announcements${filterFuture ? '?filter=future' : ''}`;
-        const res = await axios.get(url);
+        const res = await axios.get<Announcement[]>(url);
         setAnnouncements(res.data);
-        res.data.forEach(a => fetchReaders(a.id));
+        res.data.forEach((a: Announcement) => fetchReaders(a.id));
     } catch (e) { console.error(e); }
   };
 
-  const fetchReaders = async (id) => {
-    const res = await axios.get(`http://localhost:3001/api/announcements/${id}/readers`);
+  const fetchReaders = async (id: number) => {
+    const res = await axios.get<string[]>(`http://localhost:3001/api/announcements/${id}/readers`);
     setReadersMap(prev => ({ ...prev, [id]: res.data }));
   };
 
-  const handleRead = async (id) => {
+  const handleRead = async (id: number) => {
     await axios.post(`http://localhost:3001/api/announcements/${id}/read`, { student_id: CURRENT_USER.id });
     fetchReaders(id);
   };
@@ -46,9 +55,10 @@ export default function App() {
     }
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const fd = new FormData(e.target);
+    const form = e.currentTarget;
+    const fd = new FormData(form);
     await axios.post('http://localhost:3001/api/announcements', {
         titel: fd.get('titel'), 
         datum: fd.get('datum'), 

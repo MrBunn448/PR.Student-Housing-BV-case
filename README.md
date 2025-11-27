@@ -9,8 +9,7 @@ The system integrates with an Arduino (hardware) to provide visual and audio fee
 Before you start, make sure you have the following installed on your computer:
 
 1. Node.js (v16 or higher) - [Download here](https://nodejs.org/)
-2. MySQL Server (via XAMPP, MAMP, or MySQL Workbench)
-3. Git (Optional, if cloning from a repo)
+2. MySQL Server (via XAMPP)
 
 ## Getting Started (Step-by-Step)
 
@@ -125,3 +124,4 @@ The backend emits Socket.io events that the hardware client should listen to:
 - **"Client cannot connect to Server":** Ensure the server terminal is running on port 3001.
 - **"Access denied for user 'root'@'localhost'":** You forgot to update the password in `server/server.js` or `server/setup_database.js`.
 - **"Module not found":** You forgot to run `npm install` in the specific folder (client or server).
+- **If you get a error related to windows policy restrictions use the "Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Unrestricted" command in powershell to allow scripts to run.

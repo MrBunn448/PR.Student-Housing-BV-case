@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { AlertTriangle, Calendar, Megaphone, PlusCircle, Filter, Eye, Users } from 'lucide-react';
+import { AlertTriangle, Calendar, Megaphone, PlusCircle, Filter, Eye, Users, Lightbulb, LightbulbOff } from 'lucide-react';
 import axios from 'axios';
 import { io } from 'socket.io-client';
 
@@ -48,6 +48,14 @@ export default function App() {
     fetchReaders(id);
   };
 
+  const handleLightOn = () => {
+    socket.emit('lights', { "status": "1" });
+  };
+
+  const handleLightOff = () => {
+    socket.emit('lights', { "status": "0" });
+  };
+
   const handleReport = async () => {
     if(confirm("Weet je zeker dat je een ongemeld feestje wilt melden?")) {
         await axios.post('http://localhost:3001/api/reports', { student_id: CURRENT_USER.id });
@@ -78,6 +86,19 @@ export default function App() {
       </header>
 
       <main className="max-w-4xl mx-auto p-4">
+        {/* ARDUINO LIGHT CONTROLS */}
+        <div className="mb-8 bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+          <h2 className="text-lg font-bold text-gray-900 mb-3">Arduino Lamp Bediening</h2>
+          <div className="flex gap-4">
+            <button onClick={handleLightOn} className="flex items-center gap-2 bg-yellow-400 hover:bg-yellow-500 text-gray-900 px-6 py-3 rounded-lg font-bold transition-colors shadow-lg">
+              <Lightbulb /> Lamp AAN
+            </button>
+            <button onClick={handleLightOff} className="flex items-center gap-2 bg-gray-700 hover:bg-gray-800 text-white px-6 py-3 rounded-lg font-bold transition-colors shadow-lg">
+              <LightbulbOff /> Lamp UIT
+            </button>
+          </div>
+        </div>
+
         {/* ALARM BUTTON */}
         <div className="mb-8 bg-white p-6 rounded-xl shadow-sm border border-red-100 flex justify-between items-center">
           <div>

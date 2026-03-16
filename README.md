@@ -2,6 +2,8 @@
 
 This is the repository for the Student Housing B.V. project. It is a web application designed to manage student announcements, specifically focused on announcing parties and reporting noise complaints.
 
+This project was part of a ~5 week project at the Orientation semester at fontys university of applied sciences
+
 The system integrates with an Arduino (hardware) to provide visual and audio feedback when parties are announced or reported.
 
 ## Prerequisites
